@@ -1,20 +1,45 @@
-# dontalk.github.io
+# DonTalk 的个人博客
 
-个人笔记网站，基于 VuePress 3 构建。
+🎉 欢迎来到我的个人技术博客！
 
-## 概述
+## 📖 关于本站
 
-此仓库用于托管由 Markdown 笔记转换而成的 VuePress 静态网站。
+这是一个基于 **VuePress 3** + **VuePress Theme Hope** 构建的现代化个人博客网站。
 
-## 网站功能
+**在线访问**: https://dontalk.github.io
 
-- 个人博客风格主题
-- 本地全文搜索
-- 标签分类系统
-- 暗色/亮色主题切换
-- GitHub Pages 自动部署
+## ✨ 特性
 
-## 本地开发
+- 🚀 **现代化设计**：基于 VuePress 3 和 Vite，快速且美观
+- 📱 **响应式布局**：完美支持 PC 和移动端
+- 🔍 **全文搜索**：快速定位所需内容
+- 🏷️ **标签分类**：清晰的知识体系结构
+- 🌙 **主题切换**：支持亮色/暗色模式
+- 🔄 **自动部署**：推送到 GitHub 自动构建发布
+
+## 📂 内容分类
+
+本站包含 17 个主要技术分类：
+
+- 💻 Java语言核心（基础、集合、并发、JVM）
+- 🗄️ 数据库与持久化（MySQL、Redis、MongoDB）
+- 🌐 Web与微服务框架（Spring Boot、Spring Cloud）
+- ⚙️ 工程化与生产实践（CI/CD、Docker、K8s）
+- 🏗️ 分布式系统与架构（微服务、消息队列）
+- ⚡ 性能优化与调优
+- 🔒 安全与合规
+- ☁️ 云原生与容器化
+- 🤖 AI 与智能应用（Spring AI、LangChain4j）
+- 等等...
+
+## 🚀 快速开始
+
+### 环境要求
+
+- Node.js >= 18.19.0 (推荐使用 20.x LTS)
+- npm >= 8
+
+### 本地开发
 
 ```bash
 # 安装依赖
@@ -27,13 +52,43 @@ npm run docs:dev
 npm run docs:build
 ```
 
-## 部署
+详细部署说明请查看 [DEPLOY.md](./DEPLOY.md)
 
-此仓库已配置 GitHub Actions 工作流，推送至 `main` 分支时将自动构建并部署到 GitHub Pages。
+## 📝 文章结构
 
-访问地址：https://dontalk.github.io
+所有技术文章位于 `docs/` 目录下，按主题分类组织：
 
-## 注意事项
+```
+docs/
+├── 01-Java语言核心/
+├── 02-数据库与持久化/
+├── 03-Web与微服务框架/
+├── ...
+└── 17-AI 与智能应用/
+```
 
-- 确保 Node.js 版本 >= 18
-- 图片资源需放在 `public` 目录下，Markdown 中引用路径需相应调整
+原始笔记备份在 `my-notes/` 目录。
+
+## 🔧 自定义配置
+
+编辑 `docs/.vuepress/config.ts` 可以修改网站配置。
+
+## 📦 部署
+
+本站通过 GitHub Actions 自动部署到 GitHub Pages。
+
+推送代码到 main 分支即可触发自动部署：
+
+```bash
+git add .
+git commit -m "更新内容"
+git push origin main
+```
+
+## 📄 许可证
+
+MIT License | Copyright © 2026 DonTalk
+
+---
+
+**注意**：首次运行前请确保 Node.js 版本符合要求，详见 [DEPLOY.md](./DEPLOY.md)

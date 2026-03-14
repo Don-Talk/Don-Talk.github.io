@@ -1,0 +1,15 @@
+# 依赖
+node_modules/
+
+# 构建输出
+dist/
+.DS_Store/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# 临时文件
+*.log
+npm-debug.log*

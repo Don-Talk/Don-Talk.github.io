@@ -1,0 +1,21 @@
+{
+  "name": "dontalk.github.io",
+  "version": "1.0.0",
+  "description": "个人博客网站，基于 VuePress 3 构建",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vuepress-vite dev docs",
+    "docs:build": "vuepress-vite build docs",
+    "docs:preview": "vuepress-vite preview docs"
+  },
+  "devDependencies": {
+    "@vuepress/bundler-vite": "2.0.0-rc.19",
+    "vue": "^3.5.13",
+    "vuepress": "2.0.0-rc.19"
+  },
+  "dependencies": {
+    "@vuepress/plugin-search": "2.0.0-rc.70",
+    "vuepress-theme-hope": "2.0.0-rc.68"
+  }
+}
