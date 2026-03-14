@@ -1,0 +1,303 @@
+命令行启动本地pg sql  
+Version ： 11.21
+https://deepinout.com/sqlite/sqlite-questions/75_postgresql_how_can_i_start_postgresql_on_windows.html
+
+D:\Program Files\PostgreSQL\11\bin\
+pg_ctl.exe start -D "D:\Program Files\PostgreSQL\11\data"
+
+---------------------------------------------------------------网址----------------------------------------------------------------------------
+
+中软管理系统：
+http://10.100.193.212/index
+system/system123
+
+------------------------------服务器变更
+发环境 IP 变更：10.100.193.33 -> 10.100.201.151
+基础组件服务器：10.100.193.65 -> 10.100.201.152
+jetlinks：10.100.193.113 -> 10.100.201.153
+自研平台：10.100.193.219 -> 10.100.201.154
+
+开发环境-151
+测试环境-154
+
+
+---------------------------------------------------------------数据库----------------------------------------------------------------------------
+本地mysql
+root 
+password
+
+本地postgres
+postgres
+password
+
+-------------------------------------开发环境151
+ES用户名：elastic
+密码：YKrUVhYgh1NTsatNgITo
+
+
+
+eyJhbGciOiJIUzUxMiJ9.eyJ1c2VyX2lkIjo2LCJ1c2VyX2tleSI6ImVjZjYxMjdlLTU2ZmMtNGI2Mi1hNjc2LWVhMTJlMzkyNzMwNSIsInVzZXJuYW1lIjoiYWRtaW4ifQ.6Jpqpngr2o6mIyoGNJ8eE8CpwCEKr8SFQCm2oN2c1YKL_BUWpqbkddp0NiV1Kt8BK-ezP7ydcMX5clZxVdCP9g
+
+CertUtil -hashfile 111.xls md5
+md5:  95fe63d40b7e6d2c6cc6ad55f8aff39e
+	
+开启日志sql打印：
+--mybatis-plus.configuration.log-impl="org.apache.ibatis.logging.stdout.StdOutImpl"
+
+--mqtt.clientId="ota@cs_iotcloud_local"
+
+		
+		
+Spring 版本号：5.3.24
+SpringBoot 版本号：2.7.7
+
+
+
+
+
+-- IDEA-monitor-模块配置
+--nacos.namespace="dongtao_local_dev"
+--spring.profiles.active="dev"
+--mqtt.clientId="monitor@local_dev"
+--spring.elasticsearch.uris="127.0.0.1:9302"
+--spring.elasticsearch.username="elastic"
+--spring.elasticsearch.password="0gwgai0PNXipHVS94dwH"
+
+md5 : CertUtil -hashfile 文件路径 MD5
+95fe63d40b7e6d2c6cc6ad55f8aff39e
+
+---------------------------------------------------------------------- 服务器
+--------------------------------------------------------job
+--nacos.namespace="dongtao_local_dev"
+
+--------------------------------------------------------monitor
+--nacos.namespace="dongtao_local_dev"
+--spring.profiles.active="dev"
+--mqtt.clientId="monitor@local_dev"
+
+--------------------------------------------------------auth
+--nacos.namespace="dongtao_local_dev"
+
+--------------------------------------------------------system
+--nacos.namespace="dongtao_local_dev"
+--mybatis-plus.configuration.log-impl="org.apache.ibatis.logging.stdout.StdOutImpl"
+
+--------------------------------------------------------gateaway
+--nacos.namespace="dongtao_local_dev"
+--security.captcha.enabled=false
+
+--------------------------------------------------------OTA
+--nacos.namespace="dongtao_local_dev"
+--spring.profiles.active="dev"
+--mqtt.clientId="ota@local_dev"
+
+
+
+---------------------------------------------------------------------- 本地
+--------------------------------------------------------job
+
+--spring.profiles.active="dev"
+--mqtt.clientId="monitor@local_dev"
+
+--nacos.server-addr=127.0.0.1:8848
+--nacos.username=
+--nacos.password=
+--nacos.namespace="dongtao_local_dev"
+
+--spring.redis.host=127.0.0.1
+--spring.datasource.dynamic.datasource.master.url="jdbc:postgresql://127.0.0.1:5432/cs-iotcloud?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&serverTimezone=Asia/Shanghai&stringtype=unspecified"
+--spring.datasource.dynamic.datasource.master.username=postgres
+--spring.datasource.dynamic.datasource.master.password=password
+
+
+--spring.elasticsearch.uris="127.0.0.1:9302"
+--spring.elasticsearch.username="elastic"
+--spring.elasticsearch.password="0gwgai0PNXipHVS94dwH"
+
+--------------------------------------------------------monitor
+--spring.profiles.active="dev"
+--mqtt.clientId="monitor@local_dev"
+
+--nacos.server-addr=127.0.0.1:8848
+--nacos.username=
+--nacos.password=
+--nacos.namespace="dongtao_local_dev"
+
+--spring.redis.host=127.0.0.1
+--spring.datasource.dynamic.datasource.master.url="jdbc:postgresql://127.0.0.1:5432/cs-iotcloud?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&serverTimezone=Asia/Shanghai&stringtype=unspecified"
+--spring.datasource.dynamic.datasource.master.username=postgres
+--spring.datasource.dynamic.datasource.master.password=password
+
+
+--spring.elasticsearch.uris="127.0.0.1:9302"
+--spring.elasticsearch.username="elastic"
+--spring.elasticsearch.password="0gwgai0PNXipHVS94dwH"
+
+--------------------------------------------------------auth
+--spring.profiles.active="dev"
+--mqtt.clientId="monitor@local_dev"
+
+--nacos.server-addr=127.0.0.1:8848
+--nacos.username=
+--nacos.password=
+--nacos.namespace="dongtao_local_dev"
+
+--spring.redis.host=127.0.0.1
+--spring.redis.password=
+--spring.datasource.dynamic.datasource.master.url="jdbc:postgresql://127.0.0.1:5432/cs-iotcloud?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&serverTimezone=Asia/Shanghai&stringtype=unspecified"
+--spring.datasource.dynamic.datasource.master.username=postgres
+--spring.datasource.dynamic.datasource.master.password=password
+
+
+--spring.elasticsearch.uris="127.0.0.1:9302"
+--spring.elasticsearch.username="elastic"
+--spring.elasticsearch.password="0gwgai0PNXipHVS94dwH"
+
+
+
+let url = "http://10.100.201.151:8380/api/monitor/v1/monitor/device/log/33";
+
+http://127.0.0.1:8080/api/monitor/v1/monitor/device/log/33
+
+
+
+
+
+
+--spring.elasticsearch.uris=10.100.201.152:9200
+
+
+--nacos.namespace="dongtao_local_dev"
+--spring.datasource.dynamic.datasource.master.url="jdbc:postgresql://127.0.0.1:5432/cs-iotcloud?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&serverTimezone=Asia/Shanghai&stringtype=unspecified"
+--spring.datasource.dynamic.datasource.master.username="postgres"
+--spring.datasource.dynamic.datasource.master.password="password"
+
+
+
+1.mqtt消息，保存到ES，companyId查询
+2.OTA自测
+
+3.1.1.2功能细分
+	1.组织架构中，剔除设备
+	2.根据公司查看拓扑图
+	3.
+
+创建公司：
+	1.后端接口
+	2.标签 参数校验
+
+公司/部门详情页:
+	1.统计部门、公司下的节点、设备信息
+	2.编辑权限控制
+	3.
+
+30天免登陆：
+1.登录（勾选）
+2.修改密码
+3.登出
+4.自动续期
+
+
+1.实时监控
+
+
+data:image/png;base64,iVBORw0KGg
+
+data:image/{图片文件格式};base64,{base64编码(Basic)}
+
+	
+
+
+
+
+
+{"pageIndex":0,"pageSize":12,"terms":[{"terms":[{"type":"or","value":"2024-03-06 15:03:28","termType":"gt","column":"timestamp"}]}]}
+
+
+/v2/AJDNGALk/3b5146e801ca405/child/{childdeviceId}/event/{eventId}
+
+/v2/AJDNGALk/3b5146e801ca405/event/event0002 
+
+{
+ "messageId": "消息ID",     
+ "deviceId": "3b5146e801ca405", 
+ "timestamp": "1709862549", 
+ "data": {           
+    "level": "normal", 
+	"type": "1",
+	"K33333333333": "66d"
+ }
+}
+
+
+
+
+
+        }
+        CommonPage<DevicePropertyVO> devicePropertyVOCommonPage = queryProperty(devDeviceInstancePropertyQueryDTO.getId(),devDeviceInstancePropertyQueryDTO.getValue(),startTimestamp,endTimestamp,
+                devDeviceInstancePropertyQueryDTO.getSort(),devDeviceInstancePropertyQueryDTO.getPageSize(),devDeviceInstancePropertyQueryDTO.getPageNum()-1);
+        return devicePropertyVOCommonPage;
+    }
+
+
+
+
+
+
+2024-03-11 16:47:41.733
+key : login_tokens:2c3e3834-a9a5-462f-a25c-23cfece79b0a
+
+
+
+
+
+1.编辑节点权限校验
+2.查看拓扑图
+3.拓扑图去掉设备
+
+
+
+C:\Users\admin\AppData\Roaming\JetBrains\IntelliJIdea2022.2\jdbc-drivers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+还有一点 大盘要涨就要权重来带，权重最多的板块在金融，银行要稳定不能暴涨暴跌，
+只有保险和券商，所以除了券商，保险也会涨。
+大盘不涨光涨小票行不行，那肯定不行，没有人气，所以大盘一定要拉起来，带着小票涨。
+
+
+劳动节：5月1日至5日放假调休，共5天。4月28日（星期日）、5月11日（星期六）上班。
