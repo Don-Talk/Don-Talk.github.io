@@ -77,9 +77,9 @@ bash
 
 CollapseWrapCopy
 
-```
+```text
 sudo systemctl is-enabled jenkins
-```
+```text
 
 如果输出是 enabled，说明已设置好。如果不是，启用它：
 
@@ -87,9 +87,9 @@ bash
 
 CollapseWrapCopy
 
-```
+```text
 sudo systemctl enable jenkins
-```
+```text
 
 ## 步骤 3：初始配置 Jenkins
 
@@ -144,9 +144,9 @@ bash
 
 CollapseWrapCopy
 
-```
+```text
 sudo ufw allow 8080 sudo ufw status
-```
+```text
 
 ## 步骤 5：验证
 

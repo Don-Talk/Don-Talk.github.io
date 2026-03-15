@@ -34,7 +34,7 @@ MongoDB 是一个面向文档存储的数据库，看一下与关系型数据库
 
 
 
-```
+```text
 mongorestore.exe -h 134.175.107.183 --port 27017 -d swim  D:\Works\大学工作室\swim\mongo数据\swim_data_mongodb
 
 
@@ -60,7 +60,7 @@ use swim
 db.auth("adminUser", "adminPass")
 
 db.createUser({user: "root",pwd: "123456",roles: [ { role: "dbOwner", db: "swim" } ]})
-```
+```text
 
 
 

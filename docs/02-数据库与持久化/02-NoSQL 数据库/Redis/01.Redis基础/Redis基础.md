@@ -345,7 +345,7 @@ io-threads 4
 # 是否让 IO 线程也负责读取客户端数据和解析协议。默认为 no。
 # 设置为 yes 才能发挥多线程 I/O 的最大效能。
 io-threads-do-reads yes
-```
+```text
 
 3. 配置建议
 
@@ -518,10 +518,10 @@ Redis 事务通过 `MULTI`、`EXEC` 包裹命令，**按顺序执行，不被其
 
 示例（Redis CLI）：
 
-```
+```text
 # 管道命令（Linux shell）
 echo -e "SET a 1\nSET b 2\nGET a\nGET b" | redis-cli --pipe
-```
+```text
 
 **十一、持久化相关命令**
 
@@ -635,7 +635,7 @@ save 60 10000
 dbfilename dump.rdb
 dir ./
 rdbcompression yes
-```
+```text
 
 #### **RDB的优缺点**
 
@@ -743,7 +743,7 @@ appendfsync everysec
 auto-aof-rewrite-percentage 100
 auto-aof-rewrite-min-size 64mb
 aof-use-rdb-preamble yes
-```
+```text
 
 在金融系统，关闭RDB，只用AOF并设appendfsync always。
 
@@ -814,7 +814,7 @@ appendonly yes
 appendfilename appendonly.aof
 appendfsync everysec  # AOF 同步策略
 aof-use-rdb-preamble yes  # 混合模式
-```
+```text
 
 - **测试恢复**：在开发环境模拟崩溃（kill 进程），重启检查数据。
 
@@ -869,7 +869,7 @@ auto-aof-rewrite-percentage 100  # 当 AOF 增长 100% 时重写
 auto-aof-rewrite-min-size 64mb   # 最小重写阈值 64MB
 aof-use-rdb-preamble yes      # 启用 RDB 前缀（混合关键）
 aof-rewrite-incremental-fsync yes  # 重写时增量 fsync，提升性能
-```
+```text
 
 - RDB 配置可选结合（如 save 900 1），用于额外快照备份。
 - 应用配置后，重启 Redis 或用 CONFIG REWRITE 动态更新。
@@ -908,7 +908,7 @@ auto-aof-rewrite-min-size 64mb
 save 900 1 # 15分钟内有1个修改
 save 300 10 # 5分钟内有10个修改
 save 60 10000 # 1分钟内有10000个修改
-```
+```text
 
 
 

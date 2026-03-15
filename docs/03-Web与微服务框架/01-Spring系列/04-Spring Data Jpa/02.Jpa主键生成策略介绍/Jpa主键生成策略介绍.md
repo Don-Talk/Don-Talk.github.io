@@ -10,7 +10,7 @@
 	<artifactId>javax.persistence</artifactId>
 	<version>2.1.0</version>
 </dependency>
-```
+```text
 
 ## 2.GeneratedValue注解
 
@@ -23,7 +23,7 @@ public @interface GeneratedValue {
     GenerationType strategy() default AUTO;
     String generator() default "";
 }
-```
+```text
 
 如上代码所示，**GeneratedValue** 注解有 **strategy** 和 **generator** 两个成员变量。
 
@@ -78,7 +78,7 @@ public @interface GeneratedValue {
 )
 @Column(name = "login_log_id", unique = true, nullable = false)
 private Long loginLogId; // 登录日志编号
-```
+```text
 
 #### 3.1.2 TableGenerator 注解源码
 
@@ -149,7 +149,7 @@ public @interface TableGenerator {
     Index[] indexes() default {};
 }
 
-```
+```text
 
 ### 3.2 GenerationType.SEQUENCE
 
@@ -176,7 +176,7 @@ public @interface TableGenerator {
 )
 @Column(name = "para_id", unique = true, nullable = false)
 public Long getParaId() { return paraId; }
-```
+```text
 
 #### 3.2.2 SequenceGenerator 注解源码
 
@@ -219,7 +219,7 @@ public @interface SequenceGenerator {
      */
     int allocationSize() default 50;
 }
-```
+```text
 
 ### 3.3 GenerationType.IDENTITY
 
@@ -232,7 +232,7 @@ public @interface SequenceGenerator {
 @GeneratedValue(strategy = GenerationType.IDENTITY)
 @Column(name = "para_id", unique = true, nullable = false)
 private Long paraId;        // 参数编号
-```
+```text
 
 ### 3.4 GenerationType.AUTO
 
@@ -243,7 +243,7 @@ private Long paraId;        // 参数编号
 @GeneratedValue
 @Column(name = "para_id", unique = true, nullable = false)
 private Long paraId;        // 参数编号
-```
+```text
 
 ## 4. 各数据库对比
 

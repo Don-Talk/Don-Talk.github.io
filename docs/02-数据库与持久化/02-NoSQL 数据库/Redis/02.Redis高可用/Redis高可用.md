@@ -482,7 +482,7 @@ sentinel notification-script mymaster /path/to/notify.sh
 
 # 客户端重配置脚本（可选，更新客户端配置）
 sentinel client-reconfig-script mymaster /path/to/reconfig.sh
-```
+```text
 
 - 启动Sentinel：使用`redis-sentinel /path/to/sentinel.conf`命令启动。多个哨兵共享类似配置，Sentinel会自动发现彼此
 - 注意：主从节点的redis.conf中需要配置`replica-priority`（从节点优先级，默认100）来影响新主挑选。例如，从节点设置`replica-priority 100`
@@ -503,7 +503,7 @@ sentinel client-reconfig-script mymaster /path/to/reconfig.sh
     <artifactId>jedis</artifactId>
     <version>5.1.2</version>  <!-- 最新版本根据需要调整 -->
 </dependency>
-```
+```text
 
 Java 代码示例（一个简单的类）：
 
@@ -567,7 +567,7 @@ public class RedisSentinelExample {
         }
     }
 }
-```
+```text
 
 **解释**：
 
@@ -634,7 +634,7 @@ cluster-enabled yes
 cluster-config-file nodes.conf  # 集群状态文件
 cluster-node-timeout 15000     # 超时 ms
 cluster-replica-validity-factor 10  # 从节点有效性因子
-```
+```text
 
 #### 注意事项
 
@@ -784,7 +784,7 @@ sentinel auth-pass my-master mypassword
 
 # 通知脚本（可选，Failover时执行）
 sentinel notification-script my-master /scripts/notify.sh
-```
+```text
 
 Master的redis.conf示例（简化）：
 
@@ -793,14 +793,14 @@ port 6379
 requirepass mypassword  # 密码
 appendonly yes  # 启用AOF持久化
 replica-announce-ip 192.168.1.101  # 公告IP（云环境用）
-```
+```text
 
 Slave的redis.conf（与Master类似，加上）：
 
 ```bash
 replicaof 192.168.1.101 6379
 masterauth mypassword
-```
+```text
 
 #### 生产注意：
 
@@ -851,13 +851,13 @@ masterauth mypassword  # 用于节点间认证
 
 # 其他优化
 protected-mode no  # 关闭保护模式（内网用）
-```
+```text
 
 创建Cluster命令示例：
 
 ```bash
 redis-cli --cluster create 192.168.1.101:6379 192.168.1.102:6379 192.168.1.103:6379 192.168.1.104:6379 192.168.1.105:6379 192.168.1.106:6379 --cluster-replicas 1 --cluster-yes
-```
+```text
 
 （--cluster-replicas 1 表示每个主配1个从）
 
