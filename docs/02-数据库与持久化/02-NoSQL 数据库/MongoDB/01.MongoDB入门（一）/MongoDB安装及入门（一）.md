@@ -60,7 +60,6 @@ use swim
 db.auth("adminUser", "adminPass")
 
 db.createUser({user: "root",pwd: "123456",roles: [ { role: "dbOwner", db: "swim" } ]})
-```text
 
 
 

@@ -925,7 +925,6 @@ CREATE TABLE tbl_log(
 	info VARCHAR(255),
 	createDate DATE
 );
-```text
 
 ```java
 public interface LogService {

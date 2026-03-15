@@ -1639,7 +1639,6 @@ net start winnat
 docker cp nginx:/etc/nginx/nginx.conf /docker/nginx
 # 复制名称为 nginx 容器中 /etc/nginx/conf.d 文件到宿主机的 /docker/nginx 路径下
 docker cp nginx:/etc/nginx/conf.d /docker/nginx
-```text
 
 
 
@@ -1655,5 +1654,3 @@ docker cp nginx:/etc/nginx/conf.d /docker/nginx
 
 
 
-
-```

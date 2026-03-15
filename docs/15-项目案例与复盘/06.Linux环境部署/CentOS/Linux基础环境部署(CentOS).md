@@ -131,7 +131,6 @@ bind 0.0.0.0
 
 ```shell
 sudo systemctl restart redis
-```text
 
 
 

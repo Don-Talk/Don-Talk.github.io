@@ -827,7 +827,6 @@ jdbc.driver=com.mysql.jdbc.Driver
 jdbc.url=jdbc:mysql://localhost:3306/spring_db?useSSL=false
 jdbc.username=root
 jdbc.password=root
-```text
 
 ```java
 public class JdbcConfig {

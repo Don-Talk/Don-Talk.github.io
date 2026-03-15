@@ -81,7 +81,6 @@ Attempts to ssh to github
 
 ```sh
 Hi xxx! You've successfully authenticated, but GitHub does not # provide shell access.
-```text
 
 
 

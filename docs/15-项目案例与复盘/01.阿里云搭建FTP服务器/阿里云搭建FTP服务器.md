@@ -297,7 +297,6 @@ anon_umask表示文件上传的默认掩码。计算方式是777减去anon_umask
 
 ```shell
 sudo service vsftpd restart
-```text
 
 
 

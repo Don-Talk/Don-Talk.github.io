@@ -799,7 +799,6 @@ INSERT INTO 表名 VALUES(值1,值2,…),(值1,值2,…),(值1,值2,…)…;
 
 ```sql
 select * from stu;
-```text
 
 
 
@@ -1345,5 +1344,4 @@ SELECT 字段列表 FROM 表名 LIMIT  起始索引 , 查询条目数;
 
 ```sql
 起始索引 = (当前页码 - 1) * 每页显示的条数
-```text
 
