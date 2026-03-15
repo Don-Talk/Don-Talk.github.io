@@ -910,16 +910,16 @@ Spring整合Junit的两个注解作用分别是什么？
 
 ```xml
 <!--junit-->
-<dependency>
-  <groupId>junit</groupId>
-  <artifactId>junit</artifactId>
-  <version>4.12</version>
+\<dependency\>
+  \<groupId\>junit</groupId>
+  \<artifactId\>junit</artifactId>
+  \<version\>4.12</version>
 </dependency>
 <!--spring整合junit-->
-<dependency>
-  <groupId>org.springframework</groupId>
-  <artifactId>spring-test</artifactId>
-  <version>5.1.9.RELEASE</version>
+\<dependency\>
+  \<groupId\>org.springframework</groupId>
+  \<artifactId\>spring-test</artifactId>
+  \<version\>5.1.9.RELEASE</version>
 </dependency>
 ```text
 

@@ -55,7 +55,7 @@ function fixEmptyCodeBlocks(content) {
   return { content: newLines.join('\n'), fixed };
 }
 
-// 转义类 HTML 标签
+// 转义类 HTML 标签 - 更严格的正则
 function fixHtmlLikeTags(content) {
   let fixed = false;
   const lines = content.split('\n');
@@ -72,9 +72,11 @@ function fixHtmlLikeTags(content) {
       continue;
     }
     
-    // 如果不在代码块内，转义类似 <UPPERCASE> 的模式
+    // 如果不在代码块内，转义类似 <WORD> 的模式
+    // 匹配：<后面跟至少一个字母（大小写都算），可以包含数字、下划线、连字符、斜杠
     if (!inCodeBlock) {
-      const htmlTagRegex = /(?<!\\)<([A-Z][A-Z0-9_/-]+)(?<!\\)>/g;
+      // 更宽松的正则，匹配所有可能的标签
+      const htmlTagRegex = /(?<!\\)<([a-zA-Z][a-zA-Z0-9_/-]*)(?<!\\)>/g;
       
       if (htmlTagRegex.test(line)) {
         line = line.replace(htmlTagRegex, '\\<$1\\>');

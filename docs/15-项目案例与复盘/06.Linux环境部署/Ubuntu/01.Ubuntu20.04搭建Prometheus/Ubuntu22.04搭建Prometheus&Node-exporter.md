@@ -383,7 +383,7 @@ http://<your-server-ip>:9090
 
 你已经安装了 Prometheus 和 Node Exporter，接下来将 Grafana 连接到 Prometheus：
 
-1. 登录 Grafana（http://<your-server-ip>:3000）。
+1. 登录 Grafana（http://\<your-server-ip\>:3000）。
 2. 点击左侧菜单的 Configuration（齿轮图标） -> Data Sources。
 3. 点击 Add data source，选择 Prometheus。
 4. 在 URL 字段输入 http://localhost:9090（Prometheus 的地址），然后点击 Save & Test。
