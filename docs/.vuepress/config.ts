@@ -25,7 +25,6 @@ export default defineUserConfig({
     
     // 图标配置
     iconAssets: "fontawesome-with-brands",
-    logo: "/logo.svg",
     
     // 仓库地址
     repo: "dontalk/dontalk.github.io",
@@ -76,6 +75,9 @@ export default defineUserConfig({
     
     // 插件配置
     plugins: {
+      // 启用博客功能
+      blog: true,
+      
       // 搜索功能
       search: {
         maxSuggestions: 10,
