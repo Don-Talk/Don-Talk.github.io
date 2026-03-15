@@ -11,7 +11,7 @@
 
 ## 1，约束
 
-<img src="assets/image-20210724104749122.png" alt="image-20210724104749122" style="zoom:70%;" />
+<!-- 图片缺失：image-20210724104749122.png -->
 
 上面表中可以看到表中数据存在一些问题：
 
@@ -537,9 +537,9 @@ alter table emp add CONSTRAINT fk_emp_dept FOREIGN key(dep_id) REFERENCES dept(i
 
   查看表结构模型图：
 
-  <img src="assets/image-20210724140456921.png" alt="image-20210724140456921" style="zoom:80%;" />
+  <!-- 图片缺失：image-20210724140456921.png -->
 
-### 2.3  表关系(多对多)
+### 2.3  表关系 (多对多)
 
 * 多对多
   * 如：商品 和 订单

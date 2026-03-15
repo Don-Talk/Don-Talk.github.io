@@ -294,7 +294,7 @@ execution（public User com..UserService.findById(..))
 execution(* *..*Service+.*(..))
 ```text
 
-![image-20210730153824117](assets/image-20210730153824117.png)
+<!-- 图片缺失：image-20210730153824117.png -->
 
 #### 4.3 书写技巧
 
