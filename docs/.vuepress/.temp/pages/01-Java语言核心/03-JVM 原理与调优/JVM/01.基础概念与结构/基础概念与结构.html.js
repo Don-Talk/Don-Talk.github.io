@@ -1,0 +1,16 @@
+import comp from "D:/Codes/My/dontalk.github.io/docs/.vuepress/.temp/pages/01-Java语言核心/03-JVM 原理与调优/JVM/01.基础概念与结构/基础概念与结构.html.vue"
+const data = JSON.parse("{\"path\":\"/01-Java%E8%AF%AD%E8%A8%80%E6%A0%B8%E5%BF%83/03-JVM%20%E5%8E%9F%E7%90%86%E4%B8%8E%E8%B0%83%E4%BC%98/JVM/01.%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5%E4%B8%8E%E7%BB%93%E6%9E%84/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5%E4%B8%8E%E7%BB%93%E6%9E%84.html\",\"title\":\"基础概念与结构\",\"lang\":\"zh-CN\",\"frontmatter\":{\"gitInclude\":[],\"description\":\"基础概念与结构 什么是 JVM？ 说说 JVM 的其他特性？ 能说一下 JVM 的内存区域吗？ 堆和栈的区别是什么？ 变量存在堆栈的什么位置？ 说一下 JDK 1.6、1.7、1.8 内存区域的变化？ 为什么要使用元空间替代永久代？ 说说 JVM 的组织架构？\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://dontalk.github.io/01-Java%E8%AF%AD%E8%A8%80%E6%A0%B8%E5%BF%83/03-JVM%20%E5%8E%9F%E7%90%86%E4%B8%8E%E8%B0%83%E4%BC%98/JVM/01.%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5%E4%B8%8E%E7%BB%93%E6%9E%84/%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5%E4%B8%8E%E7%BB%93%E6%9E%84.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"DonTalk 的个人博客\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"基础概念与结构\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"基础概念与结构 什么是 JVM？ 说说 JVM 的其他特性？ 能说一下 JVM 的内存区域吗？ 堆和栈的区别是什么？ 变量存在堆栈的什么位置？ 说一下 JDK 1.6、1.7、1.8 内存区域的变化？ 为什么要使用元空间替代永久代？ 说说 JVM 的组织架构？\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"基础概念与结构\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":null,\\\"author\\\":[{\\\"@type\\\":\\\"Person\\\",\\\"name\\\":\\\"DonTalk\\\",\\\"url\\\":\\\"https://dontalk.github.io\\\"}]}\"]]},\"headers\":[{\"level\":2,\"title\":\"什么是 JVM？\",\"slug\":\"什么是-jvm\",\"link\":\"#什么是-jvm\",\"children\":[]},{\"level\":2,\"title\":\"说说 JVM 的其他特性？\",\"slug\":\"说说-jvm-的其他特性\",\"link\":\"#说说-jvm-的其他特性\",\"children\":[]},{\"level\":2,\"title\":\"能说一下 JVM 的内存区域吗？\",\"slug\":\"能说一下-jvm-的内存区域吗\",\"link\":\"#能说一下-jvm-的内存区域吗\",\"children\":[]},{\"level\":2,\"title\":\"堆和栈的区别是什么？\",\"slug\":\"堆和栈的区别是什么\",\"link\":\"#堆和栈的区别是什么\",\"children\":[]},{\"level\":2,\"title\":\"变量存在堆栈的什么位置？\",\"slug\":\"变量存在堆栈的什么位置\",\"link\":\"#变量存在堆栈的什么位置\",\"children\":[]},{\"level\":2,\"title\":\"说一下 JDK 1.6、1.7、1.8 内存区域的变化？\",\"slug\":\"说一下-jdk-1-6、1-7、1-8-内存区域的变化\",\"link\":\"#说一下-jdk-1-6、1-7、1-8-内存区域的变化\",\"children\":[]},{\"level\":2,\"title\":\"为什么要使用元空间替代永久代？\",\"slug\":\"为什么要使用元空间替代永久代\",\"link\":\"#为什么要使用元空间替代永久代\",\"children\":[]},{\"level\":2,\"title\":\"说说 JVM 的组织架构？\",\"slug\":\"说说-jvm-的组织架构\",\"link\":\"#说说-jvm-的组织架构\",\"children\":[{\"level\":3,\"title\":\"\",\"slug\":\"\",\"link\":\"#\",\"children\":[]}]}],\"readingTime\":{\"minutes\":0.29,\"words\":86},\"filePathRelative\":\"01-Java语言核心/03-JVM 原理与调优/JVM/01.基础概念与结构/基础概念与结构.md\",\"autoDesc\":true}")
+export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

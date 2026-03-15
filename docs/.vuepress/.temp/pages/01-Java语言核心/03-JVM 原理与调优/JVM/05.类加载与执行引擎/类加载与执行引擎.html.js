@@ -1,0 +1,16 @@
+import comp from "D:/Codes/My/dontalk.github.io/docs/.vuepress/.temp/pages/01-Java语言核心/03-JVM 原理与调优/JVM/05.类加载与执行引擎/类加载与执行引擎.html.vue"
+const data = JSON.parse("{\"path\":\"/01-Java%E8%AF%AD%E8%A8%80%E6%A0%B8%E5%BF%83/03-JVM%20%E5%8E%9F%E7%90%86%E4%B8%8E%E8%B0%83%E4%BC%98/JVM/05.%E7%B1%BB%E5%8A%A0%E8%BD%BD%E4%B8%8E%E6%89%A7%E8%A1%8C%E5%BC%95%E6%93%8E/%E7%B1%BB%E5%8A%A0%E8%BD%BD%E4%B8%8E%E6%89%A7%E8%A1%8C%E5%BC%95%E6%93%8E.html\",\"title\":\"类加载与执行引擎\",\"lang\":\"zh-CN\",\"frontmatter\":{\"gitInclude\":[],\"description\":\"类加载与执行引擎 了解类的加载机制吗？ (类加载器、双亲委派) 类加载器有哪些？ (启动、扩展、应用、自定义) 能说一下类的生命周期吗？ (加载、连接、初始化、使用、卸载) 类装载的过程知道吗？ (载入、链接、初始化) 什么是双亲委派模型？为什么要用它？ 如何破坏双亲委派机制？ (SPI、热部署等场景) 说说解释执行和编译执行的区别？ (JIT编译器原理)\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://dontalk.github.io/01-Java%E8%AF%AD%E8%A8%80%E6%A0%B8%E5%BF%83/03-JVM%20%E5%8E%9F%E7%90%86%E4%B8%8E%E8%B0%83%E4%BC%98/JVM/05.%E7%B1%BB%E5%8A%A0%E8%BD%BD%E4%B8%8E%E6%89%A7%E8%A1%8C%E5%BC%95%E6%93%8E/%E7%B1%BB%E5%8A%A0%E8%BD%BD%E4%B8%8E%E6%89%A7%E8%A1%8C%E5%BC%95%E6%93%8E.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"DonTalk 的个人博客\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"类加载与执行引擎\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"类加载与执行引擎 了解类的加载机制吗？ (类加载器、双亲委派) 类加载器有哪些？ (启动、扩展、应用、自定义) 能说一下类的生命周期吗？ (加载、连接、初始化、使用、卸载) 类装载的过程知道吗？ (载入、链接、初始化) 什么是双亲委派模型？为什么要用它？ 如何破坏双亲委派机制？ (SPI、热部署等场景) 说说解释执行和编译执行的区别？ (JIT编译器原理)\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"类加载与执行引擎\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":null,\\\"author\\\":[{\\\"@type\\\":\\\"Person\\\",\\\"name\\\":\\\"DonTalk\\\",\\\"url\\\":\\\"https://dontalk.github.io\\\"}]}\"]]},\"headers\":[{\"level\":2,\"title\":\"了解类的加载机制吗？ (类加载器、双亲委派)\",\"slug\":\"了解类的加载机制吗-类加载器、双亲委派\",\"link\":\"#了解类的加载机制吗-类加载器、双亲委派\",\"children\":[]},{\"level\":2,\"title\":\"类加载器有哪些？ (启动、扩展、应用、自定义)\",\"slug\":\"类加载器有哪些-启动、扩展、应用、自定义\",\"link\":\"#类加载器有哪些-启动、扩展、应用、自定义\",\"children\":[]},{\"level\":2,\"title\":\"能说一下类的生命周期吗？ (加载、连接、初始化、使用、卸载)\",\"slug\":\"能说一下类的生命周期吗-加载、连接、初始化、使用、卸载\",\"link\":\"#能说一下类的生命周期吗-加载、连接、初始化、使用、卸载\",\"children\":[]},{\"level\":2,\"title\":\"类装载的过程知道吗？ (载入、链接、初始化)\",\"slug\":\"类装载的过程知道吗-载入、链接、初始化\",\"link\":\"#类装载的过程知道吗-载入、链接、初始化\",\"children\":[]},{\"level\":2,\"title\":\"什么是双亲委派模型？为什么要用它？\",\"slug\":\"什么是双亲委派模型-为什么要用它\",\"link\":\"#什么是双亲委派模型-为什么要用它\",\"children\":[]},{\"level\":2,\"title\":\"如何破坏双亲委派机制？ (SPI、热部署等场景)\",\"slug\":\"如何破坏双亲委派机制-spi、热部署等场景\",\"link\":\"#如何破坏双亲委派机制-spi、热部署等场景\",\"children\":[]},{\"level\":2,\"title\":\"说说解释执行和编译执行的区别？ (JIT编译器原理)\",\"slug\":\"说说解释执行和编译执行的区别-jit编译器原理\",\"link\":\"#说说解释执行和编译执行的区别-jit编译器原理\",\"children\":[]}],\"readingTime\":{\"minutes\":0.44,\"words\":131},\"filePathRelative\":\"01-Java语言核心/03-JVM 原理与调优/JVM/05.类加载与执行引擎/类加载与执行引擎.md\",\"autoDesc\":true}")
+export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}
