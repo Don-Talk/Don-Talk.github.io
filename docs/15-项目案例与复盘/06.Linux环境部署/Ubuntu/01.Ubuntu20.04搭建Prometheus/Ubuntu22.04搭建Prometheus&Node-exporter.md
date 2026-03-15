@@ -285,13 +285,12 @@ sudo systemctl restart prometheus
 
 ```text
 http://<your-server-ip>:9090
-```text
+```
 
 点击 Status -> Targets，你应该能看到两个目标：
 
-- prometheus（localhost:9090）
-- node_exporter（localhost:9100）
-   两者状态应为 UP。
+- prometheus (localhost:9090)
+- node_exporter (localhost:9100)   两者状态应为 UP。
 
 **4.查看指标**
  在 Prometheus Web 界面的 Graph 标签中，输入以下表达式并点击 Execute：
@@ -392,50 +391,4 @@ http://<your-server-ip>:9090
    - 点击左侧菜单的 + -> Import。
    - 在 Import via grafana.com 字段中输入仪表盘 ID，例如 1860（Node Exporter Full 仪表盘）。
    - 点击 Load，选择 Prometheus 数据源，然后点击 Import。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
