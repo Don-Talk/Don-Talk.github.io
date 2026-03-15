@@ -558,7 +558,7 @@ public class AppForInstanceUser {
 
 ![image-20210729200240820](assets/image-20210729200240820.png)
 
-#### 2.4 实现FactoryBean\<T>方式【扩展,了解】
+#### 2.4 实现FactoryBean\\<T\>方式【扩展,了解】
 
 - 定义UserDaoFactoryBean实现FactoryBean\<UserDao>
 
