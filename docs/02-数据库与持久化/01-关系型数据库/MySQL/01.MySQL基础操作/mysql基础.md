@@ -39,13 +39,13 @@
 
 在电脑上安装了数据库管理系统后，就可以通过数据库管理系统创建数据库来存储数据，也可以通过该系统对数据库中的数据进行数据的增删改查相关的操作。我们平时说的MySQL数据库其实是MySQL数据库管理系统。
 
-<img src="assets/image-20210721185923635.png" alt="image-20210721185923635" style="zoom:80%;" />
+![image-20210721185923635](assets/image-20210721185923635.png)
 
 通过上面的描述，大家应该已经知道了 `数据库管理系统` 和 `数据库` 的关系。那么有有哪些常见的数据库管理系统呢？
 
 ### 1.3  常见的数据库管理系统
 
-<img src="assets/image-20210721184354001.png" alt="image-20210721184354001" style="zoom:70%;" />
+![image-20210721184354001](assets/image-20210721184354001.png)
 
 接下来对上面列举的数据库管理系统进行简单的介绍：
 
@@ -59,7 +59,7 @@
 
 我们课程上学习的是MySQL数据库管理系统，PostgreSQL在一些公司也有使用，此时大家肯定会想以后在公司中如果使用我们没有学习过程的PostgreSQL数据库管理系统怎么办？这点大家大可不必担心，如下图所示：
 
-<img src="assets/image-20210721185303106.png" alt="image-20210721185303106" style="zoom:80%;" />
+![image-20210721185303106](assets/image-20210721185303106.png)
 
 我们可以通过数据库管理系统操作数据库，对数据库中的数据进行增删改查操作，而怎么样让用户跟数据库管理系统打交道呢？就可以通过一门编程语言（SQL）来实现。
 
@@ -84,11 +84,11 @@ https://downloads.mysql.com/archives/community/
 
 点开上面的链接就能看到如下界面：
 
-<img src="assets/image-20210404200055449.png" alt="image-20210404200055449" style="zoom:80%;" />
+![image-20210404200055449](assets/image-20210404200055449.png)
 
 选择选择和自己**系统位数**相对应的版本点击右边的`Download`，此时会进到另一个页面，同样在接近页面底部的地方找到如下图所示的位置：
 
-<img src="https://img2018.cnblogs.com/blog/1556823/201812/1556823-20181220194715840-436169502.png" alt="img" style="zoom:80%;" />
+![img](https://img2018.cnblogs.com/blog/1556823/201812/1556823-20181220194715840-436169502.png)
 
 不用理会上面的登录和注册按钮，直接点击 `No thanks, just start my download.` 就可以下载。
 
@@ -145,23 +145,23 @@ mysqld -remove mysql
 
 右键`此电脑`→`属性`，点击`高级系统设置`
 
-<img src="assets/1556823-20181220220242472-524708778.png" alt="img" style="zoom:90%;" />
+![img](assets/1556823-20181220220242472-524708778.png)
 
 点击`环境变量`
 
-<img src="assets/1556823-20181220220359609-736422950.png" alt="img" style="zoom:90%;" />
+![img](assets/1556823-20181220220359609-736422950.png)
 
 在`系统变量`中新建MYSQL_HOME
 
-<img src="assets/image-20201109140222488.png" alt="image-20201109140222488" style="zoom:80%;" />
+![image-20201109140222488](assets/image-20201109140222488.png)
 
 在`系统变量`中找到并**双击**`Path`
 
-<img src="assets/1556823-20181220220551145-1198958872.png" alt="img" style="zoom:80%;" />
+![img](assets/1556823-20181220220551145-1198958872.png)
 
 点击`新建`
 
-<img src="assets/image-20201109135248104.png" alt="image-20201109135248104" style="zoom:80%;" />
+![image-20201109135248104](assets/image-20201109135248104.png)
 
 最后点击确定。
 
@@ -321,11 +321,11 @@ quit
 
 **数据模型：**
 
-<img src="assets/image-20210721212754568.png" alt="image-20210721212754568" style="zoom:70%;" />
+![image-20210721212754568](assets/image-20210721212754568.png)
 
 如上图，我们通过客户端可以通过数据库管理系统创建数据库，在数据库中创建表，在表中添加数据。创建的每一个数据库对应到磁盘上都是一个文件夹。比如可以通过SQL语句创建一个数据库（数据库名称为db1），语句如下。该语句咱们后面会学习。
 
-<img src="assets/image-20210721213349761.png" alt="image-20210721213349761" style="zoom:80%;" />
+![image-20210721213349761](assets/image-20210721213349761.png)
 
 
 
@@ -333,7 +333,7 @@ quit
 
 而一个数据库下可以创建多张表，我们到MySQL中自带的mysql数据库的文件夹目录下：
 
-<img src="assets/image-20210721214029913.png" alt="image-20210721214029913" style="zoom:80%;" />
+![image-20210721214029913](assets/image-20210721214029913.png)
 
 而上图中右边的 `db.frm` 是表文件，`db.MYD` 是数据文件，通过这两个文件就可以查询到数据展示成二维表的效果。
 
@@ -360,7 +360,7 @@ quit
 
 * SQL 语句可以单行或多行书写，以分号结尾。
 
-  <img src="assets/image-20210721215223872.png" alt="image-20210721215223872" style="zoom:80%;" /> 
+  ![image-20210721215223872](assets/image-20210721215223872.png) 
 
   如上，以分号结尾才是一个完整的sql语句。
 
@@ -368,15 +368,15 @@ quit
 
   同样的一条sql语句写成下图的样子，一样可以运行处结果。
 
-  <img src="assets/image-20210721215328410.png" alt="image-20210721215328410" style="zoom:80%;" /> 
+  ![image-20210721215328410](assets/image-20210721215328410.png) 
 
 * 注释
 
   * 单行注释: -- 注释内容 或 #注释内容(MySQL 特有) 
 
-    <img src="assets/image-20210721215517293.png" alt="image-20210721215517293" style="zoom:80%;" /> 
+    ![image-20210721215517293](assets/image-20210721215517293.png) 
 
-    <img src="assets/image-20210721215556885.png" alt="image-20210721215556885" style="zoom:80%;" /> 
+    ![image-20210721215556885](assets/image-20210721215556885.png) 
 
     > 注意：使用-- 添加单行注释时，--后面一定要加空格，而#没有要求。
 
@@ -388,13 +388,13 @@ quit
 
   DDL简单理解就是用来操作数据库，表等
 
-  <img src="assets/image-20210721220032047.png" alt="image-20210721220032047" style="zoom:60%;" />
+  ![image-20210721220032047](assets/image-20210721220032047.png)
 
 * DML(Data Manipulation Language) 数据操作语言，用来对数据库中表的数据进行增删改
 
   DML简单理解就对表中数据进行增删改
 
-  <img src="assets/image-20210721220132919.png" alt="image-20210721220132919" style="zoom:60%;" />
+  ![image-20210721220132919](assets/image-20210721220132919.png)
 
 * DQL(Data Query Language) 数据查询语言，用来查询数据库中表的记录(数据)
 
@@ -420,7 +420,7 @@ SHOW DATABASES;
 
 运行上面语句效果如下：
 
-<img src="assets/image-20210721221107014.png" alt="image-20210721221107014" style="zoom:80%;" />
+![image-20210721221107014](assets/image-20210721221107014.png)
 
 上述查询到的是的这些数据库是mysql安装好自带的数据库，我们以后不要操作这些数据库。
 
@@ -434,11 +434,11 @@ CREATE DATABASE 数据库名称;
 
 运行语句效果如下：
 
-<img src="assets/image-20210721223450755.png" alt="image-20210721223450755" style="zoom:80%;" />
+![image-20210721223450755](assets/image-20210721223450755.png)
 
 而在创建数据库的时候，我并不知道db1数据库有没有创建，直接再次创建名为db1的数据库就会出现错误。
 
-<img src="assets/image-20210721223745490.png" alt="image-20210721223745490" style="zoom:80%;" />
+![image-20210721223745490](assets/image-20210721223745490.png)
 
 为了避免上面的错误，在创建数据库的时候先做判断，如果不存在再创建。
 
@@ -450,7 +450,7 @@ CREATE DATABASE IF NOT EXISTS 数据库名称;
 
 运行语句效果如下：
 
-<img src="assets/image-20210721224056476.png" alt="image-20210721224056476" style="zoom:80%;" />
+![image-20210721224056476](assets/image-20210721224056476.png)
 
 从上面的效果可以看到虽然db1数据库已经存在，再创建db1也没有报错，而创建db2数据库则创建成功。
 
@@ -470,7 +470,7 @@ DROP DATABASE IF EXISTS 数据库名称;
 
 运行语句效果如下：
 
-<img src="assets/image-20210721224435251.png" alt="image-20210721224435251" style="zoom:80%;" />
+![image-20210721224435251](assets/image-20210721224435251.png)
 
 ### 4.4  使用数据库
 
@@ -490,7 +490,7 @@ SELECT DATABASE();
 
 运行语句效果如下：
 
-<img src="assets/image-20210721224720841.png" alt="image-20210721224720841" style="zoom:80%;" />
+![image-20210721224720841](assets/image-20210721224720841.png)
 
 ## 5，DDL:操作表
 
@@ -516,7 +516,7 @@ DESC 表名称;
 
 查看mysql数据库中func表的结构，运行语句如下：
 
-<img src="assets/image-20210721230332428.png" alt="image-20210721230332428" style="zoom:80%;" />
+![image-20210721230332428](assets/image-20210721230332428.png)
 
 ### 5.2  创建表
 
@@ -536,7 +536,7 @@ CREATE TABLE 表名 (
 
 知道了创建表的语句，那么我们创建创建如下结构的表
 
-<img src="assets/image-20210721230824097.png" alt="image-20210721230824097" style="zoom:80%;" />
+![image-20210721230824097](assets/image-20210721230824097.png)
 
 ```sql
 create table tb_user (
@@ -548,7 +548,7 @@ create table tb_user (
 
 运行语句如下：
 
-<img src="assets/image-20210721231142326.png" alt="image-20210721231142326" style="zoom:80%;" />
+![image-20210721231142326](assets/image-20210721231142326.png)
 
 ### 5.3  数据类型
 
@@ -663,7 +663,7 @@ DROP TABLE IF EXISTS 表名;
 
 运行语句效果如下：
 
-<img src="assets/image-20210721235108267.png" alt="image-20210721235108267" style="zoom:80%;" />
+![image-20210721235108267](assets/image-20210721235108267.png)
 
 ### 5.5  修改表
 
@@ -734,37 +734,37 @@ alter table stu drop addr;
 
 第一步： 点击连接，选择MySQL
 
-<img src="assets/image-20210721235928346.png" alt="image-20210721235928346" style="zoom:70%;" />
+![image-20210721235928346](assets/image-20210721235928346.png)
 
 第二步：填写连接数据库必要的信息
 
-<img src="assets/image-20210722000116080.png" alt="image-20210722000116080" style="zoom:80%;" />
+![image-20210722000116080](assets/image-20210722000116080.png)
 
 以上操作没有问题就会出现如下图所示界面：
 
-<img src="assets/image-20210722000345349.png" alt="image-20210722000345349" style="zoom:80%;" />
+![image-20210722000345349](assets/image-20210722000345349.png)
 
 #### 6.3.2  操作
 
 连接成功后就能看到如下图界面：
 
-<img src="assets/image-20210722000521997.png" alt="image-20210722000521997" style="zoom:80%;" />
+![image-20210722000521997](assets/image-20210722000521997.png)
 
 * **修改表结构**
 
 通过下图操作修改表结构：
 
-<img src="assets/image-20210722000740661.png" alt="image-20210722000740661" style="zoom:80%;" />
+![image-20210722000740661](assets/image-20210722000740661.png)
 
 点击了设计表后即出现如下图所示界面，在图中红框中直接修改字段名，类型等信息：
 
-<img src="assets/image-20210722000929075.png" alt="image-20210722000929075" style="zoom:80%;" />
+![image-20210722000929075](assets/image-20210722000929075.png)
 
 * **编写SQL语句并执行**
 
 按照如下图所示进行操作即可书写SQL语句并执行sql语句。
 
-<img src="assets/image-20210722001333817.png" alt="image-20210722001333817" style="zoom:80%;" />
+![image-20210722001333817](assets/image-20210722001333817.png)
 
 ## 7，DML
 
@@ -884,7 +884,7 @@ delete from stu;
 
 下面是黑马程序员展示试题库数据的页面
 
-<img src="assets/image-20210722215838144.png" alt="image-20210722215838144" style="zoom:80%;" />
+![image-20210722215838144](assets/image-20210722215838144.png)
 
 页面上展示的数据肯定是在数据库中的试题库表中进行存储，而我们需要将数据库中的数据查询出来并展示在页面给用户看。上图中的是最基本的查询效果，那么数据库其实是很多的，不可能在将所有的数据在一页进行全部展示，而页面上会有分页展示的效果，如下：
 
@@ -986,7 +986,7 @@ AS: AS 也可以省略
 
   上面语句中的\*不建议大家使用，因为在这写\*不方便我们阅读sql语句。我们写字段列表的话，可以添加注释对每一个字段进行说明
 
-  <img src="assets/image-20210722221534870.png" alt="image-20210722221534870" style="zoom:80%;" />
+  ![image-20210722221534870](assets/image-20210722221534870.png)
 
   而在上课期间为了简约课程的时间，老师很多地方都会写*。
 
@@ -1029,7 +1029,7 @@ SELECT 字段列表 FROM 表名 WHERE 条件列表;
 
 条件列表可以使用以下运算符
 
-<img src="assets/image-20210722190508272.png" alt="image-20210722190508272" style="zoom:60%;" />
+![image-20210722190508272](assets/image-20210722190508272.png)
 
 #### 8.2.2  条件查询练习
 
@@ -1171,7 +1171,7 @@ SELECT 字段列表 FROM 表名 ORDER BY 排序字段名1 [排序方式1],排序
 
 如何理解呢？假设有如下表
 
-<img src="assets/image-20210722194410628.png" alt="image-20210722194410628" style="zoom:80%;" />
+![image-20210722194410628](assets/image-20210722194410628.png)
 
 现有一需求让我们求表中所有数据的数学成绩的总和。这就是对math字段进行纵向求和。
 
@@ -1300,7 +1300,7 @@ SELECT 字段列表 FROM 表名 [WHERE 分组前条件限定] GROUP BY 分组字
 
 如下图所示，大家在很多网站都见过类似的效果，如京东、百度、淘宝等。分页查询是将数据一页一页的展示给用户看，用户也可以通过点击查看下一页的数据。
 
-<img src="assets/image-20210722230330366.png" alt="image-20210722230330366" style="zoom:80%;" />
+![image-20210722230330366](assets/image-20210722230330366.png)
 
 接下来我们先说分页查询的语法。
 
